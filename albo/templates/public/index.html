@@ -1,0 +1,11 @@
+{% extends 'public/base.html' %}
+{% block titulo %}
+ALBO: Bienvenidos
+{% endblock %}
+
+{% block content %}
+
+<a href="{% url 'login' %}">Empezar</a>
+{% load static %}
+<img src="{% static 'albo/img/image-win-4.jpg'%}" alt="">
+{% endblock %}

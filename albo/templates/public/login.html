@@ -1,0 +1,14 @@
+{% extends 'public/base.html' %}
+
+{% block content %}
+<button onclick='window.location="http://127.0.0.1:8000/admin/login/?next=/admin/";'>administrador</button>
+
+
+{% load static %}
+
+<input placeholder="usuario:" type="text" name="name1" id="id1">
+<input placeholder="contraseña:" type="password" name="name1" id="id1">
+<a href="{% url 'main' %}">continuar</a>
+<img src="{% static 'albo/img/image-win-3.jpg' %}" alt="">
+
+{% endblock %}
